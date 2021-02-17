@@ -9,7 +9,9 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lbltem: UILabel!
     @IBOutlet weak var lblcity: UILabel!
+    //@IBOutlet weak var lblcity: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

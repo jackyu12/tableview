@@ -9,6 +9,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     let cities = ["seattle","tacoma","La","NYC"]
+    let tem = ["9","8","18","3"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,8 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("TableViewCell", owner: self, options: nil)?.first as! TableViewCell
-                cell.lblcity.text = cities[indexPath.row]
+        cell.lblcity.text = cities[indexPath.row]
+        cell.lbltem.text = tem[indexPath.row]
 
         // Configure the cell...
 
